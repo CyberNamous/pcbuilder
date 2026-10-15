@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="midnight">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>InsideTheCase | Compare two PC builds</title>
+<meta name="description" content="Compare two PC builds side by side: compatibility, performance scores, pros and cons.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Sora:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/themes.css">
+<link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+<header class="site-header"><div class="bar-in">
+ <a class="brand" href="./"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="8" y="8" width="16" height="16" rx="3"/><path d="M12 4v4M16 4v4M20 4v4M12 24v4M16 24v4M20 24v4M4 12h4M4 16h4M4 20h4M24 12h4M24 16h4M24 20h4"/></svg>InsideTheCase</a>
+ <nav class="tabs" role="tablist" aria-label="Builds"><button role="tab" id="t-A" aria-selected="true">Build A</button><button role="tab" id="t-B" aria-selected="false">Build B</button><button role="tab" id="t-C" aria-selected="false">Compare</button></nav>
+ <div id="theme-picker" class="themes" role="group" aria-label="Theme"></div>
+</div></header>
+<aside class="ad-slot" id="ad-banner" aria-label="Advertisement"></aside>
+<main class="wrap">
+ <section class="hero"><h1>Compare two PC builds</h1><p class="lead">Pick the parts for each build. See how each one performs, what it is good and bad at, and where the two differ. CPUs run from the first DDR4-era chips (Intel 6th Gen, Ryzen 1000) to 2026 releases.</p></section>
+ <section id="p-A" role="tabpanel"></section><section id="p-B" role="tabpanel" hidden></section><section id="p-C" role="tabpanel" hidden></section>
+</main>
+<footer class="site-footer">Scores are relative estimates for learning, not benchmark results. No prices are shown. Only parts inside the case are covered.</footer>
+<script src="js/core.js"></script>
+<script src="js/data/cpus.js"></script><script src="js/data/gpus.js"></script><script src="js/data/motherboards.js"></script><script src="js/data/memory.js"></script><script src="js/data/components.js"></script><script src="js/data/notices.js"></script>
+<script src="js/analysis.js"></script><script src="js/ui.js"></script><script src="js/theme.js"></script><script src="js/app.js"></script>
+</body></html>
