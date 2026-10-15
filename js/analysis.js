@@ -25,7 +25,7 @@ if(a.prod>=75)pr.push('Fast for video editing and other heavy work');
 if(a.draw<=250)pr.push('Low power draw: cooler, quieter and cheaper to run');
 if(a.cool>=30)pr.push('Cooler has spare capacity');
 if(a.g2<55)co.push('Struggles at 1440p; best kept to 1080p');
-if(g.v<=8)co.push('8GB graphics memory may limit settings in newer games');
+if(g.v<=8)co.push(`${g.v}GB graphics memory may limit settings in newer games`);
 if(!a.upg)co.push('Dead-end socket: upgrading the CPU later means a new board');
 if(a.head>=0&&a.head<20)co.push('Little PSU headroom; upgrades may need a bigger PSU');
 if(r.cap<=16)co.push('16GB RAM is the minimum; heavy multitasking may stutter');
