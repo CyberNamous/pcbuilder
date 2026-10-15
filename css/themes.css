@@ -1,0 +1,5 @@
+/* Add a theme: copy a block, change the name, then add it to the list in js/theme.js */
+:root,[data-theme="midnight"]{--bg:#0E1220;--surface:#151B2E;--surface2:#1B2338;--ink:#E6EAF5;--mut:#9AA5C2;--line:#27304B;--acc:#7C9CFF;--acc2:#B38CFF;--acc-ink:#0E1220;--ok:#5FD3A0;--warn:#F2B45A;--bad:#FF7A85}
+[data-theme="daylight"]{--bg:#F3F5FA;--surface:#FFFFFF;--surface2:#EEF1F8;--ink:#151A2D;--mut:#576080;--line:#D9DEEB;--acc:#3358E6;--acc2:#19A5C9;--acc-ink:#FFFFFF;--ok:#0F7B4F;--warn:#8F5200;--bad:#B3261E}
+[data-theme="circuit"]{--bg:#0A1A14;--surface:#10271E;--surface2:#153227;--ink:#E4F3EA;--mut:#8FB8A2;--line:#1F4234;--acc:#3DDC97;--acc2:#B8F25A;--acc-ink:#06140E;--ok:#3DDC97;--warn:#EBC15A;--bad:#FF8A80}
+[data-theme="ember"]{--bg:#1A1210;--surface:#241914;--surface2:#2D201A;--ink:#F4E9E2;--mut:#B8A092;--line:#3C2B23;--acc:#FF8A4C;--acc2:#FFC35A;--acc-ink:#1A1210;--ok:#8BD17C;--warn:#F2C14E;--bad:#FF7A7A}

@@ -1,0 +1,39 @@
+*{box-sizing:border-box}html{scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Inter,system-ui,sans-serif}
+h1,h2,h3,.brand{font-family:Sora,Inter,sans-serif}
+h1{font-size:clamp(28px,5vw,44px);line-height:1.1;letter-spacing:-.02em;margin:0 0 8px}
+h2{font-size:20px;margin:0 0 10px}h3{font-size:15px;margin:16px 0 4px}
+small,.mut{color:var(--mut);font-size:14px}
+:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.site-header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar-in{max-width:1040px;margin:0 auto;padding:10px 16px;display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between}
+.brand{display:flex;gap:10px;align-items:center;color:var(--ink);text-decoration:none;font-weight:800;font-size:18px}
+.brand svg{width:28px;height:28px;color:var(--acc)}
+.tabs{display:flex;gap:4px;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:4px}
+.tabs button{border:0;background:none;color:var(--mut);font:inherit;font-weight:600;font-size:14px;padding:8px 16px;border-radius:999px;cursor:pointer}
+.tabs button[aria-selected=true]{background:var(--acc);color:var(--acc-ink)}
+.themes{display:flex;gap:8px}.themes button{width:24px;height:24px;border-radius:50%;border:2px solid var(--line);padding:0;cursor:pointer}
+.themes button[aria-pressed=true]{outline:2px solid var(--acc);outline-offset:2px}
+/* Ad banner area: reserved space, empty for now. Put the ad code inside #ad-banner. To hide it, add the "ad-slot--off" class. */
+.ad-slot{max-width:1040px;width:calc(100% - 32px);min-height:90px;margin:16px auto 0;border:1px dashed var(--line);border-radius:12px}
+.ad-slot--off{display:none}
+@media(max-width:600px){.ad-slot{min-height:60px}}
+.wrap{max-width:1040px;margin:0 auto;padding:20px 16px 48px}
+.hero{margin:12px 0 22px}.lead{color:var(--mut);max-width:62ch;margin:0}
+.two{display:grid;gap:16px;grid-template-columns:1fr}
+@media(min-width:860px){.two{grid-template-columns:1fr 1fr}#p-A .two>.card:last-child,#p-B .two>.card:last-child{position:sticky;top:78px;align-self:start}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px}
+.row{margin-bottom:12px}.row label{display:block;font-weight:600;font-size:13px;color:var(--mut);margin-bottom:4px}
+select{width:100%;font:inherit;color:var(--ink);background:var(--surface2);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.sc{display:grid;grid-template-columns:104px 1fr 34px;gap:10px;align-items:center;font-size:14px;margin:8px 0}
+.bar{height:10px;background:var(--surface2);border-radius:99px;overflow:hidden}
+.bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--acc),var(--acc2))}
+ul{margin:4px 0;padding:0;list-style:none}li{padding:5px 0 5px 22px;position:relative;font-size:15px}
+li:before{position:absolute;left:0;font-weight:800}.p li:before{content:"+";color:var(--ok)}.c li:before{content:"\2013";color:var(--bad)}.k li:before{content:"\2022";color:var(--acc)}
+.ok{color:var(--ok)}.warn{color:var(--warn)}.bad{color:var(--bad)}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:440px}
+th,td{padding:10px 8px;border-top:1px solid var(--line);text-align:left;font-size:15px}th{font-weight:600;color:var(--mut)}
+thead th{color:var(--ink);border-top:0}td.w{font-weight:700;color:var(--ok)}td.w:before{content:"\2713  "}
+.note{background:color-mix(in srgb,var(--warn) 12%,transparent);border:1px solid var(--warn);border-left-width:4px;border-radius:10px;padding:12px;margin:14px 0;font-size:14px}
+.site-footer{max-width:1040px;margin:0 auto;padding:0 16px 32px;color:var(--mut);font-size:13px}
+[hidden]{display:none}
