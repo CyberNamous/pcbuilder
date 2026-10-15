@@ -14,10 +14,12 @@ small,.mut{color:var(--mut);font-size:14px}
 .tabs button[aria-selected=true]{background:var(--acc);color:var(--acc-ink)}
 .themes{display:flex;gap:8px}.themes button{width:24px;height:24px;border-radius:50%;border:2px solid var(--line);padding:0;cursor:pointer}
 .themes button[aria-pressed=true]{outline:2px solid var(--acc);outline-offset:2px}
-/* Ad banner area: reserved space, empty for now. Put the ad code inside #ad-banner. To hide it, add the "ad-slot--off" class. */
-.ad-slot{max-width:1040px;width:calc(100% - 32px);min-height:90px;margin:16px auto 0;border:1px dashed var(--line);border-radius:12px}
-.ad-slot--off{display:none}
-@media(max-width:600px){.ad-slot{min-height:60px}}
+/* Sponsor banners (top and bottom). Slots collapse when empty. Ads are set in js/data/sponsors.js */
+.ad-slot{position:relative;display:flex;justify-content:center;align-items:center;max-width:1040px;width:calc(100% - 32px);margin:16px auto}
+.ad-slot:empty{display:none}
+.ad-inner a{display:block;max-width:100%}.ad-inner img{display:block;max-width:100%;height:auto;border-radius:10px}
+.ad-tag{position:absolute;top:6px;left:6px;font-size:11px;line-height:1.4;padding:1px 6px;border-radius:6px;background:color-mix(in srgb,var(--bg) 80%,transparent);color:var(--mut);pointer-events:none}
+@media(prefers-reduced-motion:reduce){.ad-inner{transition:none!important}}
 .wrap{max-width:1040px;margin:0 auto;padding:20px 16px 48px}
 .hero{margin:12px 0 22px}.lead{color:var(--mut);max-width:62ch;margin:0}
 .two{display:grid;gap:16px;grid-template-columns:1fr}
